@@ -1,0 +1,65 @@
+body {
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	animation-name: fade-out;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+.intro h1 {
+	font-size: 400%;
+	margin: 0;
+	line-height: 1;
+}
+
+.game-options {
+	display: none;
+	text-align: center;
+}
+
+.game-options h2 {
+	font-size: 200%;
+	margin-bottom: 1em;
+}
+
+.game-btn {
+	display: block;
+	margin: 0.5em auto;
+	padding: 1em 2em;
+	font-size: 100%;
+	border: none;
+	background-color: #ccc;
+	color: black;
+	cursor: pointer;
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+		font-size: 400%;
+	}
+
+	to {
+		opacity: 0;
+		font-size: 100%;
+	}
+}
